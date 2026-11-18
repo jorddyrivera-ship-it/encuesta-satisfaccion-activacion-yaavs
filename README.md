@@ -2,13 +2,13 @@
 
 Formulario web de la **Encuesta de Satisfacción 2.2**, con logo YAAVS y resultados en vivo.
 
-## En vivo (Hostinger)
+## En vivo
 
-- Encuesta: https://encuesta-satisfaccion-activacion.ganayaavs.com/
-- Resultados: https://encuesta-satisfaccion-activacion.ganayaavs.com/resultados
-- Repo: https://github.com/jorddydylanriveralopez-blip/encuesta-satisfaccion-activacion-yaavs
+- Encuesta: https://encuesta-satisfaccion-activacion-yaavs.onrender.com/
+- Resultados: https://encuesta-satisfaccion-activacion-yaavs.onrender.com/resultados
+- Dominio corto (cuando DNS apunte a Render): https://encuesta.directorio-btl.com/
 
-Las respuestas nuevas (v2.2) y las anteriores se guardan en el **mismo** portal de resultados. No se borra el historial.
+Repo: https://github.com/jorddydylanriveralopez-blip/encuesta-satisfaccion-activacion-yaavs
 
 ## Local
 
@@ -21,6 +21,14 @@ npm start
 - Encuesta: http://localhost:3000
 - Resultados: http://localhost:3000/resultados
 - CSV: http://localhost:3000/api/export.csv
+
+## Deploy (Render)
+
+```bash
+git push origin main
+```
+
+Blueprint: `render.yaml` (servicio `encuesta-satisfaccion-activacion-yaavs`).
 
 ## Formulario hermano
 
