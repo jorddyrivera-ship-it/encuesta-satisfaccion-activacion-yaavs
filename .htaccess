@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^resultados/?$ resultados.html [L]
