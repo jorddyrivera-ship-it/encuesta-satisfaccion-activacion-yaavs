@@ -1,0 +1,11 @@
+name = "encuesta-satisfaccion-activacion"
+compatibility_date = "2024-11-01"
+pages_build_output_dir = "public"
+
+[[kv_namespaces]]
+binding = "ENCUESTA_SATISFACCION"
+id = "50e7836608554b60860b8c0ed8bd6a85"
+
+[vars]
+RESET_KEY = "yaavs-reset"
+SHEETS_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbzL1Te35LzXBhPpZYUz1vP0x7bhFUti63pUOM5BG7FNIEFl2E9k5VpTXNl4y1lBWnzp5A/exec"

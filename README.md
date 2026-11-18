@@ -2,11 +2,11 @@
 
 Formulario web de la **Encuesta de Satisfacción 2.2**, con logo YAAVS y resultados en vivo.
 
-## En vivo
+## En vivo (Cloudflare Pages)
 
-- Encuesta: https://encuesta-satisfaccion-activacion-yaavs.onrender.com/
-- Resultados: https://encuesta-satisfaccion-activacion-yaavs.onrender.com/resultados
-- Dominio corto (cuando DNS apunte a Render): https://encuesta.directorio-btl.com/
+- Encuesta: https://encuesta-satisfaccion-activacion.pages.dev/
+- Resultados: https://encuesta-satisfaccion-activacion.pages.dev/resultados
+- Dominio: https://encuesta.directorio-btl.com/ (SSL en provisión)
 
 Repo: https://github.com/jorddydylanriveralopez-blip/encuesta-satisfaccion-activacion-yaavs
 
@@ -20,15 +20,14 @@ npm start
 
 - Encuesta: http://localhost:3000
 - Resultados: http://localhost:3000/resultados
-- CSV: http://localhost:3000/api/export.csv
 
-## Deploy (Render)
+## Deploy Cloudflare Pages
 
 ```bash
-git push origin main
+npx wrangler pages deploy public --project-name=encuesta-satisfaccion-activacion
 ```
 
-Blueprint: `render.yaml` (servicio `encuesta-satisfaccion-activacion-yaavs`).
+Respuestas en KV `ENCUESTA_SATISFACCION`. API en `functions/api/`.
 
 ## Formulario hermano
 
